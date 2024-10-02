@@ -12,7 +12,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Hustle",
+  title: "Hustle Banking",
   description: "Hustle: The Future of Banking for Everyone",
   icons: {
     icon: '/icons/logo.svg'
