@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Visit: www.banking.rahulsankar.pro
 
-## Getting Started
+## Project Overview
+This project aims to combine multiple bank accounts into a unified platform, allowing users to manage their finances more efficiently. Key features include sending money between accounts and accessing a dashboard that provides detailed transaction information with visual charts.
 
-First, run the development server:
+### Features
+- **Unified Account Management:** Connect and manage multiple bank accounts in one platform.
+- **Transfer Funds:** Send money between different accounts securely.
+- **Dashboard:** Visualize detailed transaction data with charts for better financial insights.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tools and Technologies
+- **Next.js**: Frontend framework built on React, for building the user interface and server-side logic.
+- **React**: Used for creating interactive and dynamic UI components.
+- **Dwolla API**: For facilitating secure and seamless money transfers between accounts.
+- **Plaid API**: Used to connect and retrieve data from multiple bank accounts.
+- **Appwrite**: Backend-as-a-Service (BaaS) to handle user authentication and database management.
+- **Sentry**: Error tracking and monitoring to ensure a robust and secure platform.
+- **Shadcn**: UI components library to build a polished and responsive interface.
