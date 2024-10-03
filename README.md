@@ -1,4 +1,4 @@
-## Visit: https://banking.rahulsankar.pro/
+## Visit: www.banking.rahulsankar.pro
 
 ## Project Overview
 This project aims to combine multiple bank accounts into a unified platform, allowing users to manage their finances more efficiently. Key features include sending money between accounts and accessing a dashboard that provides detailed transaction information with visual charts.
