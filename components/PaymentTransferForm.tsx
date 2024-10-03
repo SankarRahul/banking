@@ -26,12 +26,28 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
-const formSchema = z.object({
-  email: z.string().email("Invalid email address"),
-  name: z.string().min(4, "Transfer note is too short"),
-  amount: z.string().min(4, "Amount is too short"),
-  senderBank: z.string().min(4, "Please select a valid bank account"),
-  shareableId: z.string().min(8, "Please select a valid shareable Id"),
+// const formSchema = z.object({
+//   email: z.string().email("Invalid email address"),
+//   name: z.string().min(4, "Transfer note is too short"),
+//   amount: z.string().min(4, "Amount is too short"),
+//   senderBank: z.string().min(4, "Please select a valid bank account"),
+//   shareableId: z.string().min(8, "Please select a valid shareable Id"),
+// });
+
+export const formSchema = z.object({
+  email: z.string()
+    .email("Invalid email address")
+    .min(1, "Email is required"),
+  name: z.string()
+    .min(4, "Transfer note is too short")
+    .regex(/^[a-zA-Z\s]+$/, "Name must contain only letters and spaces"),
+  amount: z.string()
+    .regex(/^\d+(\.\d{2})?$/, "Amount must be a valid number with two decimal places"),
+  senderBank: z.string()
+    .min(4, "Please select a valid bank account"),
+  shareableId: z.string()
+    .min(8, "Please select a valid shareable ID")
+    .regex(/^[a-zA-Z0-9]+$/, "Shareable ID must be alphanumeric"),
 });
 
 const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {

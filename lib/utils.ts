@@ -209,6 +209,7 @@ export const getTransactionStatus = (date: Date) => {
 //   email: z.string().email(),
 //   password: z.string().min(8),
 // })
+
 export const authFormSchema = (type: string) => z.object({
   // sign-up only fields
   firstName: type === 'sign-in' ? z.string().optional() : z.string().min(3, "First Name must be at least 3 characters"),
